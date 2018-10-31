@@ -1,0 +1,119 @@
+body
+{
+    margin: 50px 100px;
+    min-width: 500px;
+    border: 1px solid #ccc;
+}
+
+input
+{
+    display: none;
+}
+
+svg
+{
+    width: 36px;
+    height: 28px;
+    padding: 20px;
+}
+
+.list
+{
+    display: none;
+}
+
+main
+{
+    text-align: center;
+    cursor: default;
+}
+
+section
+{
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+section:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+img:hover
+{
+    transform: scale(1.5);
+}
+
+h2
+{
+    margin: 0 20px;
+    width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a
+{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover
+{
+    text-shadow: 1px 1px #ff8000;
+}
+
+li
+{
+    margin-left: -20px;
+    list-style: none;
+}
+
+li:last-child
+{
+    margin-top: 10px;
+}
+
+p
+{
+    display: none;
+}
+
+.button:checked ~ main section,
+.button:checked ~ main p,
+.button:checked ~ main li:first-child
+{
+    display: block;
+}
+
+.button:checked ~ main h2
+{
+    width: auto;
+}
+
+.button:checked ~ main p
+{
+    margin-left: 20px;
+}
+
+.button:checked ~ main img
+{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+.button:checked ~ main li,
+.button:checked ~ main span,
+.button:checked ~ label .block
+{
+    display: none;
+}
+
+.button:checked ~ label .list
+{
+    display: block;
+}
